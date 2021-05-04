@@ -1,0 +1,72 @@
+.modal-form{
+    display: block;
+}
+
+.modal-field{
+    position: relative;
+    display: block;
+    width: 448px;   
+}
+
+.modal-form__label{
+    font-size: 12px;
+    line-height: 1,166;
+    letter-spacing: 0.01em;
+
+    color: var(--primary-text-color);
+}
+
+.modal-form__input{
+    width: 448px;
+    height: 40px;
+    margin: 0;
+    font: inherit;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding-left: 42px;
+
+}
+.modal-form__input:focus{
+    border: var(--accent-color);
+}
+.modal-form__text{
+    width: 448px;
+    margin-bottom: 10px;
+    padding: 12px 16px;
+    font: inherit;
+    border-radius: 4px;
+    
+    
+}
+.form-label-checkbox{
+    display: block;
+    -webkit-appearance: none;
+}
+
+.modal-form__label--color{
+    color: var(--accent-color);
+}
+
+.modal-form__input:focus + .modal-form__icon--color{
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form__icon{
+    position: absolute;
+    display: inline-block;
+    top: 80%;
+    left: 12px;
+    transform: translateY(-80%);
+    width: 18px;
+    height: 18px;
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.modal-form__label textarea{
+    resize: none;
+    color: var(--primary-text-color);
+}
