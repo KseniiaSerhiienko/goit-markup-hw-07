@@ -3,11 +3,12 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 50px;
+
+    & &__item:not(:last-child){
+        margin-right: 8px;
+    }
 }
 
-.flex-btn .flex-btn__item:not(:last-child){
-    margin-right: 8px;
-}
 
 .flex-btn__set{
     display: inline-block;
@@ -28,11 +29,12 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.flex-btn__set:hover,
-.flex-btn__set:focus{
+    &:hover,
+    &:focus{
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     color: #FFFFFF;
+    }
 }
+

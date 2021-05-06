@@ -12,19 +12,19 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-}
-
-.clients-icon__item:hover .icon,
-.clients-icon__item:focus .icon{
-    fill: var(--accent-color);
-}
-
-.clients-icon__item{
     fill: var(--social-link-color);
+
+    &:hover .icon,
+    &:focus .icon{
+        fill: var(--accent-color);
+    }
+
+    &:not(:last-child){
+        margin-right: 30px;
+    }
 }
-.clients-icon__item:not(:last-child){
-    margin-right: 30px;
-}
+
+
 
 .clients-icon__link{
     display: flex;
@@ -41,10 +41,11 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients-icon__link:hover,
-.clients-icon__link:focus{
+    &:hover,
+    &:focus{
     fill: var(--accent-color);
     border-color: var(--accent-color);
+    }
 }
+

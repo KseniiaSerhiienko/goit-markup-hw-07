@@ -19,10 +19,11 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button:hover,
-.button:focus{
+    &:hover,
+    &:focus{
     background-color: #188CE8;
     color: var(--primary-bg-color);
+    }
 }
+

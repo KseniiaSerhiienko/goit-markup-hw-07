@@ -1,11 +1,13 @@
 .auth-nav{
     display: flex;
     margin-left: auto;  
+
+    &__item:not(:last-child){
+        margin-right: 50px;
+    }
 }
 
-.auth-nav__item:not(:last-child){
-    margin-right: 50px;
-}
+
 
 .auth-nav__link{
     text-decoration: none;
@@ -18,9 +20,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.auth-nav__link:hover,
-.auth-nav__link:focus{
+    &:hover,
+    &:focus{
     color: var(--accent-color);
 }
+}
+
